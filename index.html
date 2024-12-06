@@ -6,28 +6,15 @@
     <title>Last Drop</title>
     <link rel="icon" href="logo-color.png" type="image/png" />
     <style>
-        /* Reset margin and padding */
-        body, html {
-            margin: 0;
-            padding: 0;
-            height: 100%; /* Make sure body takes full height */
-            overflow: hidden; /* Prevents the body from scrolling */
+        body {
+            margin: 0; /* Remove default margin */
+            padding: 0; /* Remove default padding */
         }
-
-        /* Container for the image */
-        .image-container {
-            width: 100vw; /* Full viewport width */
-            height: 100vh; /* Full viewport height */
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            overflow: auto; /* Allows scrolling */
-        }
-
+        
         img {
-            width: 100%; /* Make the image fill the width of the container */
-            height: auto; /* Maintain the aspect ratio */
-            max-width: none; /* Prevents the image from being constrained */
+            width: 100%; /* Makes the image stretch to fill the width of the screen */
+            height: auto; /* Keeps the aspect ratio intact */
+            display: block; /* Removes any unwanted space below the image */
         }
     </style>
   </head>
